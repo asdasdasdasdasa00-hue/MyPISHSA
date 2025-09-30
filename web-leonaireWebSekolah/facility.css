@@ -1,0 +1,50 @@
+:root{
+  --bg:#071227;
+  --card:#071a2b;
+  --accent:#06b6d4;
+  --muted:#b7c9d9;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,Arial;
+  background:linear-gradient(180deg,#031022,#071227);
+  color:#e6eef8;
+}
+.container{width:min(1100px,92%);margin:0 auto;padding:18px}
+.simple-header{
+  padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.03);background:rgba(255,255,255,0.01)
+}
+.simple-header .container{display:flex;justify-content:space-between;align-items:center}
+.simple-header .brand{font-weight:700;color:white;text-decoration:none}
+.simple-header nav a{color:var(--muted);margin-left:14px;text-decoration:none}
+.simple-header nav a.active{color:var(--accent);font-weight:700}
+
+.page-title{font-size:1.6rem;margin-top:14px}
+.lead{color:var(--muted)}
+
+.facilities-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:18px;
+  margin-top:18px;
+}
+.facility-card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:10px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,0.6);
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+.facility-card:hover{transform:translateY(-6px);box-shadow:0 20px 45px rgba(0,0,0,0.6)}
+.facility-img{width:100%;height:180px;object-fit:cover}
+.card-body{padding:12px}
+.card-body h3{margin:0 0 8px 0}
+.card-body p{color:var(--muted);margin:0}
+
+/* responsive */
+@media (max-width:900px){
+  .facilities-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+  .facilities-grid{grid-template-columns:1fr}
+  .facility-img{height:160px}
+}

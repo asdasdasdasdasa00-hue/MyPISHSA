@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PORIS INDAH HIGHSCHOOL</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- page stylesheet -->
+  <link rel="stylesheet" href="Modifier.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="main.html">PORIS INDAH HIGHSCHOOL</a>
+      <nav class="main-nav">
+        <a href="main.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="facility.html" class="nav-link">Facility</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="lapangan.jpg" alt="Poris Indah Highschool building" class="hero-image">
+      <div class="hero-content">
+        <h1>PORIS INDAH HIGHSCHOOL</h1>
+        <p class="subtitle">Komplek Perumahan Poris Indah blok A no.60-66, Kota Tangerang, Banten</p>
+        <p class="badge">Official Accreditation: <strong>A</strong></p>
+      </div>
+    </section>
+
+    <section class="intro container">
+      <h2>Welcome</h2>
+      <p>
+        Sejak berdirinya pada tahun 2004, SMA Poris Indah berkontribusi dalam mencerdaskan generasi bangsa.
+        Kami mendorong prestasi akademik dan non-akademik serta membentuk karakter berlandaskan iman, ilmu, dan teknologi.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Leonaire Destian Oswald — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

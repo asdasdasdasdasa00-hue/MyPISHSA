@@ -1,0 +1,48 @@
+:root{
+  --bg:#071023;
+  --muted:#b9c6d9;
+  --accent:#0ea5e9;
+  --card:#0b1a2a;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,Arial;
+  background: linear-gradient(180deg,#041021,#071023);
+  color:#e6eef8;
+}
+.container{width:min(1100px,92%);margin:0 auto;padding:18px}
+
+.mini-header{
+  border-bottom:1px solid rgba(255,255,255,0.03);
+  background:rgba(255,255,255,0.01);
+  padding:12px 0;
+}
+.mini-header .container{display:flex;justify-content:space-between;align-items:center}
+.mini-header .brand{color:white;text-decoration:none;font-weight:700}
+.mini-header nav a{color:var(--muted);margin-left:18px;text-decoration:none}
+.mini-header nav a.active{color:var(--accent);font-weight:700}
+
+/* cards */
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding:18px;
+  border-radius:10px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+  margin-top:18px;
+}
+.grid-two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid-two ul{margin:0;padding-left:20px;color:var(--muted)}
+.visuals{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.visuals figure{flex:1;min-width:180px;margin:0;background:rgba(255,255,255,0.02);padding:8px;border-radius:8px}
+.visuals img{width:100%;height:180px;object-fit:cover;border-radius:6px}
+.visuals figcaption{color:var(--muted);font-size:0.9rem;margin-top:6px}
+
+/* footer */
+.site-footer{margin-top:20px;padding:16px;text-align:center;color:var(--muted);font-size:0.95rem}
+
+/* small screens */
+@media (max-width:800px){
+  .grid-two{grid-template-columns:1fr}
+  .visuals img{height:140px}
+}
